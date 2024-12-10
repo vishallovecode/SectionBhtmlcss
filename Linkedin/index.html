@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                background-color: red;
+                margin: 20px;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+
+            }
+            .header {
+                background-color: blue;
+                height: 40px;
+                display: flex;
+                color: white;
+                justify-content: space-between;
+                padding: 10px;
+                align-items: center;
+
+            }
+            .main {
+                height: 100%;
+                background-color: red;
+            }
+            .main {
+                display: flex;
+                gap: 5px;
+            }
+            .left-sidebar {
+                width: 25%;
+                border: 2px solid black;
+            }
+            .main-content{
+                width: 50%;
+                border: 2px solid black;
+            }
+            .right-sidebar {
+                width: 25%;
+                border: 2px solid black;
+            }
+        </style>
+    </head> 
+    <body>  
+            <div class="container">
+                <div class="header">
+                    <div>Logo</div>
+                    <input placeholder="Seacrh"/>
+                    <div>Home</div>
+                    <div>My Netoworks</div>
+                    <div>Jobs</div>
+                    <div>Messaging</div>
+                    <div>Notification</div>
+                    <div>Premium</div>
+                </div>
+                <div class="main">
+                    <div class="left-sidebar"></div>
+                    <div class="main-content"></div>
+                    <div class="right-sidebar"></div>
+                </div>
+            </div>
+    </body>
+</html>
