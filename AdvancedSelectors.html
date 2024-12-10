@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Descendant Selectors */
+            .A .a {
+                color: blue;
+            }
+/* Child Selectors */
+            .A > .b {
+                 color: green;
+                 font-style: italic;
+            }
+            /* General Sibling Selector */
+            .DD ~.AA {
+                height: 200px;
+                width: 200px;
+                background-color: red;
+            }
+
+            .DD1 + .AA {
+                height: 200px;
+                width: 200px;
+                background-color: red;
+            }
+            /* Attribute Selectors */
+            a[href='flipkart.com'] {
+                color:red;
+                font-weight: bold;
+                font-style: italic;
+            }
+        </style> 
+    </head>
+    <body>
+       <h1>Descendant Selectors</h1>
+       <div class="A">
+            <span class="a">Aaaaaaa</span>
+            <div>
+                <p class="a">RRRR</p>
+                <p>PPPPP</p>
+            </div>
+       </div>
+      <div class="A">
+        <div class="b">Hey Relkax</div>
+        <div class="b">Hey chill Ha</div>
+        <div class="c">
+            <span class="b"></span>
+            <h1 class="b">Heading b1</h1>
+        </div>
+      </div>
+
+    <h1>General Sibling Selector</h1>
+     <div class="D">
+        <div class="AA">
+            before  I Aaa
+        </div>
+        <div class="DD">
+            Hey I am DD
+        </div>
+        <div class="AA">
+            hEY i AM AA
+        </div>
+        <div class="AA">sECOND AA</div>
+        <div class="CC">hey cc</div>
+        <div class="AA">third aa</div>
+     </div>
+
+
+     <h1>Adjacent  Sibling Selector</h1>
+     <div class="D">
+        <div class="AA">
+            before  I Aaa
+        </div>
+        <div class="DD1">
+            Hey I am DD
+        </div>
+        <div class="AA">
+            hEY i AM AA
+        </div>
+        <div class="AA">sECOND AA</div>
+        <div class="CC">hey cc</div>
+        <div class="AA">third aa</div>
+     </div>
+
+     <a href="flipkart.com">Flipkart</a>
+     <a href="google.com">Google</a>
+     <a href="nykaa.com">Nykaa</a>
+    </body>
+</html>

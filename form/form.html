@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="form.css"/>
+    </head>
+    <body>
+        <!-- Textual data -->
+         <form>
+        <div>
+         <label for="fullName">Full Name: </label>
+         <input 
+            placeholder="Please Enter Your name.."  
+            id="fullName"
+            required
+         />
+        </div>
+
+        <!-- Number Data -->
+
+        <div >
+            <label for="fullName">Age: </label>
+            <input 
+                placeholder="Please Enter Your Age.."  
+                id="fullName"
+                type="number"
+                required
+            />
+           </div>
+
+           <div >
+            <label for="email">Email: </label>
+            <input 
+                placeholder="Please Enter Your Email.."  
+                id="email"
+                type="email"
+            
+            />
+           </div>
+
+           <!-- Radio button -->
+           <div >
+            <span >Are you under age 18 ? </span>
+            <label>Yes</label>
+            <input 
+                type="radio"
+            />
+            <label>No</label>
+            <input 
+                type="radio"
+            />
+           </div>
+
+           <!-- Checkbox -->
+
+           <div class="mt-10" >
+            <span >Select your preferred Location: </span> <br/>
+            <label class="mt-10">Delhi</label>
+            <input 
+                type="checkbox"
+            />
+            <label>Kanpur</label>
+            <input 
+                type="checkbox"
+            />
+
+            <label>Mumbai</label>
+            <input 
+                type="checkbox"
+            />
+            <label>Bangalore</label>
+            <input 
+                type="checkbox"
+            />
+            <label>Patna</label>
+            <input 
+                type="checkbox"
+            />
+
+            <!-- Type Date -->
+
+            <div>
+                <label>Select Date</label>
+                <input type="date"/>
+            </div>
+
+            <div>
+                <label>Select Time</label>
+                <input type="time"/>
+            </div>
+
+            <div>
+                <label>Select date and time</label>
+                <input type="datetime-local"/>
+            </div>
+
+        <!-- Type password -->
+            <div>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password"/>
+            </div>
+            <!-- Type File -->
+
+            <div>
+                <label>Upload Photo</label>
+                <input type="file" />
+            </div>
+           </div>
+
+           <div >
+            <label for="email">Color: </label>
+            <input 
+                type="color"
+            />
+           </div>
+
+           <!-- Select  -->
+            <select>
+                <option>Hindi</option>
+                <option>English</option>
+                <option selected>Japanesese</option>
+                <option>COOL HAI!!</option>
+            </select>
+
+
+            <!-- <button>Submit</button> -->
+            <input type="submit" value="Submit"/>
+
+        </form>
+    </body>
+</html>
